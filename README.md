@@ -48,6 +48,8 @@ Five decisions that materially affect the numbers:
 | 2024 | 4.557 | 4.990 | **+9.5 %** |
 | 2025 | 4.047 | 4.158 | **+2.7 %** |
 
+![Simple vs. consumption-weighted average price](figures/01_premium.png)
+
 ### 2. It is structural, not a single cold snap
 
 January 2024 saw a price spike to 189.6 snt/kWh, and 20 of the 50 most expensive hours in the dataset fall in that month. Removing the most expensive 1 % of hours:
@@ -66,9 +68,13 @@ Extremes explain roughly a fifth of the 2024 premium. In 2025 removing them *inc
 | 2024 | 0.434 | 0.065 (15 %) | **0.275 (63 %)** | 0.094 |
 | 2025 | 0.111 | 0.053 (48 %) | **0.081 (73 %)** | −0.023 |
 
+![Premium decomposed into seasonal and time-of-day components](figures/02_decomposition.png)
+
 The mechanism is visible in the monthly table: January 2024 was 133 % above the annual average price *and* the highest-consumption month of the year (11.1 % of annual consumption). The most expensive month is also the month you use most.
 
 The components do not sum exactly to the premium; the residual is day-level variation that neither coarse grouping captures. The negative 2025 residual means daily variation worked slightly in the consumer's favour that year.
+
+![Monthly price and consumption, 2024 vs 2025](figures/03_seasonal.png)
 
 ### 4. Consumption behaviour did not change
 
@@ -98,6 +104,8 @@ So:
 
 - **Within-day load control is worth 3–4 % annually.** It is automatable and its value does not depend on whether the winter is expensive — note it delivers *more* in 2025 despite the far smaller total premium, because it targets the hour-of-day component, which was stable.
 - **It does not address seasonal risk,** which was 63 % of the 2024 premium. That requires either price hedging for winter months or heating control across longer horizons.
+
+![Theoretical vs. achievable savings](figures/04_savings.png)
 
 ## Uncertainties
 
